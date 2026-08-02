@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node_ci_cd 
+    restart: unless-stopped 
+    ports:
+      - "8080:8080"
+ 
